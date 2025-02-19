@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elastic/Elastic.md",
+                "file": "SIEM Tasks/CommonAlert Descriptions & Mitagation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Elastic"
+              "title": "CommonAlert Descriptions & Mitagation"
             }
           }
         ]
@@ -171,8 +171,10 @@
   },
   "active": "33e7840bde414442",
   "lastOpenFiles": [
-    "README.md",
     "Elastic/Elastic.md",
+    "SIEM Tasks/CommonAlert Descriptions & Mitagation.md",
+    "SIEM Tasks",
+    "README.md",
     "Elastic",
     "Elastic-Kibana-Notes/Untitled.md"
   ]
