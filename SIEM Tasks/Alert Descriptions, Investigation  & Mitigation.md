@@ -12,12 +12,12 @@ Identifies multiple consecutive logon failures targeting an Admin account from t
 
 **Tags**:
 
-- Domain: Endpoint
-- OS: Windows
-- Use Case: Threat Detection
-- Tactic: Credential Access
-- Resources: Investigation Guide
-- Data Source: System
+- *Domain:* Endpoint
+- *OS:* Windows
+- *Use Case:* Threat Detection
+- *Tactic:* Credential Access
+- *Resources:* Investigation Guide
+- *Data Source:* System
 
 ### Investigation Guide
 
@@ -30,6 +30,14 @@ Adversaries with no prior knowledge of legitimate credentials within the system 
 This rule identifies potential password guessing/brute force activity from a single address against an account that contains the `admin` pattern on its name, which is likely a highly privileged account.
 
 **Possible investigation steps**
+
+If this activity is suspicious, contact the account owner and confirm whether they are aware of it.
+
+Identify whether these attempts are coming from the internet or are internal.
+
+Investigate other alerts associated with the involved users and source host during the past 48 hours.
+
+
 
 
 
