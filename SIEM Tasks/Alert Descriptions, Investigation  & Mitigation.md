@@ -56,6 +56,17 @@ Determine the initial vector abused by the attacker and take action to prevent r
 
 Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
+## IPSEC NAT Traversal Port Activity
+
+[edit](https://github.com/elastic/security-docs/edit/8.17/docs/detections/prebuilt-rules/rule-details/ipsec-nat-traversal-port-activity.asciidoc "Edit this page on GitHub")
+
+This rule detects events that could be describing IPSEC NAT Traversal traffic. IPSEC is a VPN technology that allows one system to talk to another using encrypted tunnels. NAT Traversal enables these tunnels to communicate over the Internet where one of the sides is behind a NAT router gateway. This may be common on your network, but this technique is also used by threat actors to avoid detection.
+
+**Rule type**: query
+
+**Severity**: low
+
+**Risk score**: 21
 
 
 
