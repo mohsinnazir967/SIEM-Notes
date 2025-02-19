@@ -133,7 +133,49 @@ Examine the process arguments, title and working directory. These may provide in
 
 Consider the same for the parent process. If the parent process is a legitimate system utility or service, this could be related to software updates or system management. If the parent process is something user-facing like an Office application, this process could be more suspicious.
 
+## Rare User Logon
 
+A machine learning job found an unusual user name in the authentication logs. An unusual user name is one way of detecting credentialed access by means of a new or dormant user account. An inactive user account (because the user has left the organization) that becomes active may be due to credentialed access using a compromised account password. Threat actors will sometimes also create new users as a means of persisting in a compromised web application.
+
+**Rule type**: machine_learning
+
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Use Case: Identity and Access Audit
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Initial Access
+- Resources: Investigation Guide
+
+## Investigation guide
+
+**Triage and analysis**
+
+**Investigating Rare User Logon**
+
+This rule uses a machine learning job to detect an unusual user name in authentication logs, which could detect new accounts created for persistence.
+
+**Possible investigation steps**
+
+- Check if the user was newly created and if the company policies were followed.
+- Identify the user account that performed the action and whether it should perform this kind of action.
+- Investigate other alerts associated with the involved users during the past 48 hours.
+- Investigate any abnormal account behavior, such as command executions, file creations or modifications, and network connections.
+
+**False positive analysis**
+
+- Accounts that are used for specific purposes — and therefore not normally active — may trigger the alert.
+
+**Response and remediation**
+
+- Initiate the incident response process based on the outcome of the triage.
+- Investigate credential exposure on systems compromised or used by the attacker to ensure all compromised accounts are identified. Reset passwords for these accounts and other potentially compromised credentials, such as email, business systems, and web services.
+- Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
 
 
