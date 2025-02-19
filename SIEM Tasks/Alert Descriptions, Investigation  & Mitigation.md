@@ -38,14 +38,6 @@ Identify the source and the target computer and their roles in the IT environmen
 Investigate other alerts associated with the involved users and source host during the past 48 hours.
 
 If this activity is suspicious, contact the account owner and confirm whether they are aware of it.
-
-**False positive analysis**
-
-- Authentication mis-configuration or obsolete credentials.
-- Service account password expired.
-- Domain trust relationship issues.
-- Infrastructure or availability issues.
-
 #### Mitigation
 
 Isolate the source host to prevent further post-compromise behavior.
@@ -67,6 +59,28 @@ This rule detects events that could be describing IPSEC NAT Traversal traffic. I
 **Severity**: low
 
 **Risk score**: 21
+
+**Tags**:
+
+- Tactic: Command and Control
+- Domain: Endpoint
+- Use Case: Threat Detection
+- Data Source: PAN-OS
+- Resources: Investigation Guide
+
+### Investigation guide
+
+#### Triage and analysis
+
+**Investigating IPSEC NAT Traversal Port Activity**
+
+IPSEC NAT Traversal facilitates secure VPN communication across NAT devices by encapsulating IPSEC packets in UDP, typically using port 4500. While essential for legitimate encrypted traffic, adversaries exploit this to mask malicious activities, bypassing network defenses. The detection rule identifies unusual UDP traffic on port 4500, flagging potential misuse for further investigation.
+
+**Possible investigation steps**
+
+Review the source and destination IP addresses associated with the UDP traffic on port 4500 to determine if they are known or expected within your network environment.
+
+Analyze the volume and frequency of the detected traffic to assess whether it aligns with typical IPSEC NAT Traversal usage or if it appears anomalous
 
 
 
