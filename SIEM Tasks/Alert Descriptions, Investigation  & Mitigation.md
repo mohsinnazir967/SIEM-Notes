@@ -214,9 +214,39 @@ SMTP, typically operating on port 25, is crucial for email transmission. However
 
 Review the network traffic logs to identify any unusual patterns or anomalies associated with TCP port 26, focusing on the event.dataset fields such as network_traffic.flow or zeek.smtp
 
+Analyze the source and destination IP addresses involved in the alert to determine if they are known or associated with any previous suspicious activities.
 
+Check for any additional alerts or logs related to the same source or destination IP addresses to identify potential patterns or repeated attempts of communication on port 26.
 
+Assess the risk and impact on the affected systems by determining if any sensitive data or critical systems are involved in the communication on port 26.
 
+#### Mitigation
+
+Immediately isolate the affected system from the network to prevent further command and control communication via port 26.
+
+Conduct a thorough scan of the isolated system using updated antivirus and anti-malware tools to identify and remove the BadPatch malware or any other malicious software.
+
+Review and analyze network logs to identify any other systems that may have communicated with the same command and control server, and isolate those systems as well.
+
+Change all passwords and credentials that may have been compromised or accessed by the affected system to prevent unauthorized access.
+
+## [Spike in Network Traffic](https://www.elastic.co/guide/en/security/current/spike-in-network-traffic.html)
+
+A machine learning job detected an unusually large spike in network traffic. Such a burst of traffic, if not caused by a surge in business activity, can be due to suspicious or malicious activity. Large-scale data exfiltration may produce a burst of network traffic; this could also be due to unusually large amounts of reconnaissance or enumeration traffic. Denial-of-service attacks or traffic floods may also produce such a surge in traffic.
+
+**Rule type**: machine_learning
+
+**Severity**: low
+
+**Risk score**: 21
+
+### Investigation guide
+
+#### Triage and analysis
+
+**Investigating Spike in Network Traffic**
+
+Machine learning models analyze network traffic patterns to identify anomalies, such as unexpected spikes. These spikes may indicate malicious activities like data exfiltration or denial-of-service attacks. Adversaries exploit network vulnerabilities to flood traffic or extract data. The _Spike in Network Traffic_ rule leverages ML to flag unusual traffic surges, aiding in early threat detection and response.
 
 
 
