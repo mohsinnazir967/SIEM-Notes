@@ -101,6 +101,22 @@ A machine learning job detected activity for a username that is not normally act
 
 **Rule type**: machine_learning
 
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Domain: Endpoint
+- OS: Windows
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Initial Access
+- Resources: Investigation Guide
+
+
+
 
 
 
