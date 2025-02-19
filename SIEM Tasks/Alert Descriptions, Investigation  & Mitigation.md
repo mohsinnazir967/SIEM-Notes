@@ -82,6 +82,20 @@ Review the source and destination IP addresses associated with the UDP traffic o
 
 Analyze the volume and frequency of the detected traffic to assess whether it aligns with typical IPSEC NAT Traversal usage or if it appears anomalous
 
+Check for any associated network traffic events in the same timeframe that might indicate a pattern of suspicious activity, such as unusual data transfer volumes or connections to known malicious IP addresses.
+
+Investigate the endpoint or device generating the traffic to verify if it is authorized to use IPSEC NAT Traversal and if it has any history of security incidents or vulnerabilities.
+
+#### Mitigation
+
+Immediately isolate the affected system from the network to prevent further potential malicious activity and lateral movement.
+
+Conduct a thorough analysis of the isolated system to identify any signs of compromise, such as unauthorized access or data exfiltration, focusing on logs and network traffic related to UDP port 4500.
+
+Review and update firewall and intrusion detection/prevention system (IDS/IPS) rules to ensure they effectively block unauthorized IPSEC NAT Traversal traffic, particularly on UDP port 4500.
+
+Restore the affected system from a known good backup if any signs of compromise are confirmed, ensuring that all security patches and updates are applied before reconnecting to the network.
+
 
 
 
