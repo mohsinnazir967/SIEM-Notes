@@ -317,7 +317,7 @@ Stop suspicious processes.
 
 Immediately block the identified indicators of compromise (IoCs).
 
-Inspect the affected systems for additional malware backdoors like reverse shells, reverse proxies, or droppers that attackers could use to reinfect the system.
+Inspect the affected systems for additional malware backdoors like reverse shells or droppers that attackers could use to reinfect the system.
 
 Remove and block malicious artifacts identified during triage.
 
