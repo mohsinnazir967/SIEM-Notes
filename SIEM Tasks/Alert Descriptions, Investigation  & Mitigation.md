@@ -133,7 +133,7 @@ Examine the process arguments, title and working directory. These may provide in
 
 Consider the same for the parent process. If the parent process is a legitimate system utility or service, this could be related to software updates or system management. If the parent process is something user-facing like an Office application, this process could be more suspicious.
 
-## Rare User Logon
+## [Rare User Logon](https://www.elastic.co/guide/en/security/current/rare-user-logon.html)
 
 A machine learning job found an unusual user name in the authentication logs. An unusual user name is one way of detecting credentialed access by means of a new or dormant user account. An inactive user account (because the user has left the organization) that becomes active may be due to credentialed access using a compromised account password. Threat actors will sometimes also create new users as a means of persisting in a compromised web application.
 
@@ -152,9 +152,9 @@ A machine learning job found an unusual user name in the authentication logs. An
 - Tactic: Initial Access
 - Resources: Investigation Guide
 
-## Investigation guide
+### Investigation guide
 
-**Triage and analysis**
+#### Triage and analysis
 
 **Investigating Rare User Logon**
 
@@ -162,20 +162,27 @@ This rule uses a machine learning job to detect an unusual user name in authenti
 
 **Possible investigation steps**
 
-- Check if the user was newly created and if the company policies were followed.
-- Identify the user account that performed the action and whether it should perform this kind of action.
-- Investigate other alerts associated with the involved users during the past 48 hours.
-- Investigate any abnormal account behavior, such as command executions, file creations or modifications, and network connections.
+Check if the user was newly created and if the company policies were followed.
 
-**False positive analysis**
+Identify the user account that performed the action and whether it should perform this kind of action.
 
-- Accounts that are used for specific purposes — and therefore not normally active — may trigger the alert.
+Investigate other alerts associated with the involved users during the past 48 hours.
 
-**Response and remediation**
+Investigate any abnormal account behavior, such as command executions, file creations or modifications, and network connections.
 
-- Initiate the incident response process based on the outcome of the triage.
-- Investigate credential exposure on systems compromised or used by the attacker to ensure all compromised accounts are identified. Reset passwords for these accounts and other potentially compromised credentials, such as email, business systems, and web services.
-- Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
+#### Mitigation
+
+Initiate the incident response process based on the outcome of the triage.
+
+Investigate credential exposure on systems compromised or used by the attacker to ensure all compromised accounts are identified. 
+
+Reset passwords for these accounts and other potentially compromised credentials, such as email, business systems, and web services.
+
+Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
+
+## [SMTP on Port 26/TCP](https://www.elastic.co/guide/en/security/current/smtp-on-port-26-tcp.html)
+
+This rule detects events that may indicate use of SMTP on TCP port 26. This port is commonly used by several popular mail transfer agents to deconflict with the default SMTP port 25. This port has also been used by a malware family called BadPatch for command and control of Windows systems.
 
 
 
