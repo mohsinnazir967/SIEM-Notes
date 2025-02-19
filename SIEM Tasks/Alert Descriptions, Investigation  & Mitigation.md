@@ -1,6 +1,6 @@
 # Alert Descriptions, Investigation & Mitigation
 
-## Privileged Account Brute Force
+## [Privileged Account Brute Force](https://www.elastic.co/guide/en/security/current/privileged-account-brute-force.html#_investigation_guide_824)
 
 Identifies multiple consecutive logon failures targeting an Admin account from the same source address and within a short time interval. Adversaries will often brute force login attempts across multiple users with a common or known password, in an attempt to gain access to accounts.
 
@@ -21,7 +21,7 @@ Identifies multiple consecutive logon failures targeting an Admin account from t
 
 ### Investigation Guide
 
-#### Triage and analysis**
+#### Triage and analysis
 
 **Investigating Privileged Account Brute Force**
 
@@ -31,11 +31,34 @@ This rule identifies potential password guessing/brute force activity from a sin
 
 **Possible investigation steps**
 
-If this activity is suspicious, contact the account owner and confirm whether they are aware of it.
-
 Identify whether these attempts are coming from the internet or are internal.
 
+Identify the source and the target computer and their roles in the IT environment.
+
 Investigate other alerts associated with the involved users and source host during the past 48 hours.
+
+If this activity is suspicious, contact the account owner and confirm whether they are aware of it.
+
+**False positive analysis**
+
+- Authentication mis-configuration or obsolete credentials.
+- Service account password expired.
+- Domain trust relationship issues.
+- Infrastructure or availability issues.
+
+#### Mitigation
+
+Isolate the source host to prevent further post-compromise behavior.
+
+Run a full antimalware scan. This may reveal additional artifacts left in the system, persistence mechanisms, and malware components.
+
+Determine the initial vector abused by the attacker and take action to prevent reinfection through the same vector.
+
+Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
+
+
+
+
 
 
 
