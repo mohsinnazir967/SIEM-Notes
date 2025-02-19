@@ -299,5 +299,26 @@ Searching for abnormal Windows processes is a good methodology to find potential
 
 This rule uses a machine learning job to detect an anomalous Windows process with an unusual parent-child relationship, which could indicate malware execution or persistence activities on the host machine.
 
+**Possible investigation steps**
+
+If the parent process is a legitimate system utility or service, this could be related to software updates or system management. If the parent process is something user-facing like an Office application, this process could be more suspicious.
+
+Investigate the process metadata — such as the digital signature, directory, etc. — to obtain more context that can indicate whether the executable is associated with an expected software vendor or package.
+
+Validate if the activity has a consistent cadence (for example, if it runs monthly or quarterly), as it could be part of a monthly or quarterly business process.
+
+Retrieve the files' SHA-256 hash values using the PowerShell `Get-FileHash` cmdlet and search for the existence and reputation of the hashes in resources like VirusTotal.
+
+#### Mitigation
+
+If the triage identified malware, search the environment for additional compromised hosts.
+
+Stop suspicious processes.
+
+Immediately block the identified indicators of compromise (IoCs).
+
+Inspect the affected systems for additional malware backdoors like reverse shells, reverse proxies, or droppers that attackers could use to reinfect the system.
+
+Remove and block malicious artifacts identified during triage.
 
 
