@@ -248,7 +248,29 @@ A machine learning job detected an unusually large spike in network traffic. Suc
 
 Machine learning models analyze network traffic patterns to identify anomalies, such as unexpected spikes. These spikes may indicate malicious activities like data exfiltration or denial-of-service attacks. Adversaries exploit network vulnerabilities to flood traffic or extract data. The _Spike in Network Traffic_ rule leverages ML to flag unusual traffic surges, aiding in early threat detection and response.
 
+**Possible investigation steps**
 
+Review the timestamp and duration of the traffic spike to determine if it correlates with any scheduled business activities or known events.
+
+Analyze the source and destination IP addresses involved in the traffic spike to identify any unfamiliar or suspicious entities.
+
+Examine the types of network protocols and services involved in the spike to assess if they align with typical network usage patterns.
+
+Check for any recent changes in network configurations or security policies that might explain the unusual traffic patterns.
+
+#### Mitigation
+
+Immediately isolate affected systems from the network to prevent further data exfiltration or traffic flooding.
+
+Conduct a thorough analysis of network logs to identify the source and destination of the traffic spike, focusing on any unauthorized or suspicious IP addresses.
+
+Block identified malicious IP addresses and domains at the firewall and update intrusion prevention systems to prevent further access.
+
+If data exfiltration is suspected, perform a data integrity check to assess any potential data loss or compromise.
+
+Notify the incident response team to assess the situation and determine if further escalation is necessary, including potential involvement of law enforcement if data theft is confirmed.
+
+Review and update network access controls and permissions to ensure only authorized users and devices have access to sensitive data and systems.
 
 
 
