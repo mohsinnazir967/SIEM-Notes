@@ -184,9 +184,36 @@ Using the incident response data, update logging and audit policies to improve t
 
 This rule detects events that may indicate use of SMTP on TCP port 26. This port is commonly used by several popular mail transfer agents to deconflict with the default SMTP port 25. This port has also been used by a malware family called BadPatch for command and control of Windows systems.
 
+**Rule type**: query
+
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Tactic: Command and Control
+- Domain: Endpoint
+- Use Case: Threat Detection
+- Data Source: PAN-OS
+- Resources: Investigation Guide
+
 **Investigating SMTP on Port 26/TCP**
 
 SMTP, typically operating on port 25, is crucial for email transmission. However, port 26 is often used to avoid conflicts or restrictions on port 25. Adversaries exploit this by using port 26 for covert command and control, as seen with the BadPatch malware. The detection rule identifies suspicious SMTP activity on port 26 by analyzing network traffic patterns, helping to uncover potential threats.
+
+### Investigation guide
+
+#### Triage and analysis
+
+**Investigating SMTP on Port 26/TCP**
+
+SMTP, typically operating on port 25, is crucial for email transmission. However, port 26 is often used to avoid conflicts or restrictions on port 25. Adversaries exploit this by using port 26 for covert command and control, as seen with the BadPatch malware. The detection rule identifies suspicious SMTP activity on port 26 by analyzing network traffic patterns, helping to uncover potential threats.
+
+**Possible investigation steps**
+
+Review the network traffic logs to identify any unusual patterns or anomalies associated with TCP port 26, focusing on the event.dataset fields such as network_traffic.flow or zeek.smtp
+
 
 
 
