@@ -48,9 +48,8 @@ Determine the initial vector abused by the attacker and take action to prevent r
 
 Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
-## IPSEC NAT Traversal Port Activity
+## [IPSEC NAT Traversal Port Activity](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
 
-[edit](https://github.com/elastic/security-docs/edit/8.17/docs/detections/prebuilt-rules/rule-details/ipsec-nat-traversal-port-activity.asciidoc "Edit this page on GitHub")
 
 This rule detects events that could be describing IPSEC NAT Traversal traffic. IPSEC is a VPN technology that allows one system to talk to another using encrypted tunnels. NAT Traversal enables these tunnels to communicate over the Internet where one of the sides is behind a NAT router gateway. This may be common on your network, but this technique is also used by threat actors to avoid detection.
 
@@ -96,7 +95,11 @@ Review and update firewall and intrusion detection/prevention system (IDS/IPS) r
 
 Restore the affected system from a known good backup if any signs of compromise are confirmed, ensuring that all security patches and updates are applied before reconnecting to the network.
 
+## [Unusual Windows Username](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
 
+A machine learning job detected activity for a username that is not normally active, which can indicate unauthorized changes, activity by unauthorized users, lateral movement, or compromised credentials. In many organizations, new usernames are not often created apart from specific types of system activities, such as creating new accounts for new employees. These user accounts quickly become active and routine. Events from rarely used usernames can point to suspicious activity. Additionally, automated Linux fleets tend to see activity from rarely used usernames only when personnel log in to make authorized or unauthorized changes, or threat actors have acquired credentials and log in for malicious purposes. Unusual usernames can also indicate pivoting, where compromised credentials are used to try and move laterally from one host to another.
+
+**Rule type**: machine_learning
 
 
 

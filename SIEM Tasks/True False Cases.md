@@ -56,3 +56,4 @@ A security system correctly ignores a legitimate login attempt.
 **Impact**: 
 
 True negatives help in maintaining normal operations without unnecessary interruptions.
+
