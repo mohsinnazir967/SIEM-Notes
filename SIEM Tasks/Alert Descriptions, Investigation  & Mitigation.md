@@ -268,13 +268,36 @@ Block identified malicious IP addresses and domains at the firewall and update i
 
 If data exfiltration is suspected, perform a data integrity check to assess any potential data loss or compromise.
 
-Notify the incident response team to assess the situation and determine if further escalation is necessary, including potential involvement of law enforcement if data theft is confirmed.
-
-Review and update network access controls and permissions to ensure only authorized users and devices have access to sensitive data and systems.
+## [Anomalous Windows Process Creation](https://www.elastic.co/guide/en/security/current/anomalous-windows-process-creation.html)
 
 
+Identifies unusual parent-child process relationships that can indicate malware execution or persistence mechanisms. Malicious scripts often call on other applications and processes as part of their exploit payload. For example, when a malicious Office document runs scripts as part of an exploit payload, Excel or Word may start a script interpreter process, which, in turn, runs a script that downloads and executes malware. Another common scenario is Outlook running an unusual process when malware is downloaded in an email. Monitoring and identifying anomalous process relationships is a method of detecting new and emerging malware that is not yet recognized by anti-virus scanners.
 
+**Rule type**: machine_learning
 
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Domain: Endpoint
+- OS: Windows
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Persistence
+- Resources: Investigation Guide
+
+### Investigation guide
+
+#### Triage and analysis
+
+**Investigating Anomalous Windows Process Creation**
+
+Searching for abnormal Windows processes is a good methodology to find potentially malicious activity within a network. Understanding what is commonly run within an environment and developing baselines for legitimate activity can help uncover potential malware and suspicious behaviors.
+
+This rule uses a machine learning job to detect an anomalous Windows process with an unusual parent-child relationship, which could indicate malware execution or persistence activities on the host machine.
 
 
 
