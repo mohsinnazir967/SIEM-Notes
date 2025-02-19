@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "69bab410b659f511",
@@ -142,20 +142,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Alert Descriptions, Investigation  & Mitigation"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
