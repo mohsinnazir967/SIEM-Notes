@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/CommonAlert Descriptions & Mitagation.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CommonAlert Descriptions & Mitagation"
+              "title": "Alert Descriptions, Investigation  & Mitigation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Alert Descriptions, Investigation  & Mitigation"
             }
           },
           {
@@ -155,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,7 +171,7 @@
   "active": "33e7840bde414442",
   "lastOpenFiles": [
     "Elastic/Elastic.md",
-    "SIEM Tasks/CommonAlert Descriptions & Mitagation.md",
+    "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks",
     "README.md",
     "Elastic",
