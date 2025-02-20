@@ -57,4 +57,4 @@ A security system correctly ignores a legitimate login attempt.
 
 True negatives help in maintaining normal operations without unnecessary interruptions.
 
-![[Ture_False_Scenarios.png]]
+![[True_False_Scenarios.png.png]]
