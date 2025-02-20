@@ -321,7 +321,7 @@ Inspect the affected systems for additional malware backdoors like reverse shell
 
 Remove and block malicious artifacts identified during triage.
 
-## Unusual Hour for a User to Logon
+## [Unusual Hour for a User to Logon]()
 
 A machine learning job detected *a user logging in at a time of day that is unusual for the user.* This can be due to credentialed access via a compromised account when the user and the threat actor are in different time zones. In addition, unauthorized user activity often takes place during non-business hours.
 
@@ -357,3 +357,31 @@ Contact the account owner and confirm whether they are aware of this activity.
 Investigate any abnormal account behavior, such as command executions, file creations or modifications, network connections, data access, and logon events.
 
 Investigate other alerts associated with the involved users during the past 48 hours.
+
+#### Mitigation
+
+Initiate the incident response process based on the outcome of the triage.
+
+Investigate credential exposure on systems compromised or used by the attacker to ensure all compromised accounts are identified. Reset passwords for these accounts and other potentially compromised credentials, such as email, business systems, and web services.
+
+Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
+
+## [Unusual Process For a Windows Host](https://www.elastic.co/guide/en/security/current/unusual-process-for-a-windows-host.html)
+
+Identifies rare processes that do not usually run on individual hosts, which can indicate execution of unauthorized services, malware, or persistence mechanisms. Processes are considered rare when they only run occasionally as compared with other processes running on the host
+
+**Rule type**: machine_learning
+
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Domain: Endpoint
+- OS: Windows
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Persistence
+- Resources: Investigation Guide
