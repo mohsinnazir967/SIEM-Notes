@@ -444,9 +444,14 @@ This rule uses alert data to determine *when multiple alerts in different phases
 
 The detection rule identifies hosts with alerts across various attack phases, indicating potential compromise. Adversaries exploit system vulnerabilities, moving through different tactics like execution, persistence, and exfiltration. This rule prioritizes hosts with diverse tactic alerts, aiding analysts in focusing on high-risk threats by correlating alert data to detect complex attack patterns.
 
+**Possible investigation steps**
+
 Review the alert details to identify the specific host involved and the different ATT&CK tactics that triggered the alerts.
 
-- Examine the timeline of the alerts to understand the sequence of events and determine if there is a pattern or progression in the tactics used.
-- Correlate the alert data with other logs and telemetry from the host, such as process creation, network connections, and file modifications, to gather additional context.
-- Investigate any known vulnerabilities or misconfigurations on the host that could have been exploited by the adversary.
-- Check for any indicators of compromise (IOCs) associated with the alerts, such as suspicious IP addresses, domains, or file hashes, and search for these across the network.
+Examine the timeline of the alerts to understand the sequence of events and determine if there is a pattern or progression in the tactics used.
+
+Correlate the alert data with other logs and telemetry from the host, such as process creation, network connections, and file modifications, to gather additional context.
+
+Check for any indicators of compromise (IOCs) associated with the alerts, such as suspicious IP addresses, domains, or file hashes, and search for these across the network.
+
+#### 
