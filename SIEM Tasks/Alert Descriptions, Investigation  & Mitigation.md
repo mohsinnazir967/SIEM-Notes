@@ -404,6 +404,18 @@ If the parent process is a legitimate system utility or service, this could be r
 
 Investigate the process metadata — such as the digital signature, directory, etc. — to obtain more context that can indicate whether the executable is associated with an expected software vendor or package.
 
-
 Investigate other alerts associated with the user/host during the past 48 hours.
 
+#### Mitigation
+
+Isolate the involved hosts to prevent further post-compromise behavior.
+
+If the triage identified malware, search the environment for additional compromised hosts.
+
+Implement temporary network rules, procedures, and segmentation to contain the malware.
+
+Stop suspicious processes.
+
+## Multiple Alerts in Different ATT&CK Tactics on a Single Host
+
+This rule uses alert data to determine when multiple alerts in different phases of an attack involving the same host are triggered. Analysts can use this to prioritize triage and response, as these hosts are more likely to be compromised.
