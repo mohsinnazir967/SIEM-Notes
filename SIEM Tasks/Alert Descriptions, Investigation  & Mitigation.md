@@ -516,3 +516,40 @@ If the triage identified malware, search the environment for additional compromi
 Implement temporary network rules, procedures, and segmentation to contain the malware.
 
 Stop suspicious processes.
+
+## # Unusual Windows Path Activity
+
+Identifies processes started from atypical folders in the file system, which might indicate malware execution or persistence mechanisms. In corporate Windows environments, software installation is centrally managed and it is unusual for programs to be executed from user or temporary directories. Processes executed from these locations can denote that a user downloaded software directly from the Internet or a malicious script or macro executed malware.
+
+**Rule type**: machine_learning
+
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Domain: Endpoint
+- OS: Windows
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Persistence
+- Tactic: Execution
+- Resources: Investigation Guide
+
+### Investigation guide
+
+#### Triage and analysis**
+
+**Investigating Unusual Windows Path Activity**
+
+In corporate Windows environments, software is typically managed centrally, making execution from user or temporary directories uncommon. Adversaries exploit this by running malware from these uncommon paths, bypassing standard security measures. The _Unusual Windows Path Activity_ detection rule leverages machine learning to identify such anomalies, flagging potential persistence or execution tactics used by attackers.
+
+**Possible investigation steps**
+
+- Review the process name and path to determine if it is a known legitimate application or a suspicious executable.
+- Check the parent process to understand how the process was initiated and if it correlates with expected user behavior or known software installations.
+- Investigate the user account associated with the process execution to verify if the activity aligns with their typical usage patterns or if it appears anomalous.
+- Examine the file hash of the executable to see if it matches known malware signatures or if it has been flagged by any threat intelligence sources.
+- Look into recent file modifications or creations in the directory from which the process was executed to identify any additional suspicious files or scripts.
