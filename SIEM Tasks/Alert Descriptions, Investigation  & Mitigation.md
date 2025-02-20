@@ -425,3 +425,11 @@ This rule uses alert data to determine *when multiple alerts in different phases
 **Severity**: high
 
 **Risk score**: 73
+
+**Tags**:
+
+- Use Case: Threat Detection
+- Rule Type: Higher-Order Rule
+- Resources: Investigation Guide
+
+
