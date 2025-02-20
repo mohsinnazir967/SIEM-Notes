@@ -540,7 +540,7 @@ Identifies processes started from atypical folders in the file system, which mig
 
 ### Investigation guide
 
-#### Triage and analysis**
+#### Triage and analysis
 
 **Investigating Unusual Windows Path Activity**
 
