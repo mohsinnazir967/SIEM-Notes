@@ -454,4 +454,35 @@ Correlate the alert data with other logs and telemetry from the host, such as pr
 
 Check for any indicators of compromise (IOCs) associated with the alerts, such as suspicious IP addresses, domains, or file hashes, and search for these across the network.
 
-#### 
+#### Mitigation
+
+Isolate the affected host from the network immediately to prevent further lateral movement by the adversary.
+
+Conduct a thorough forensic analysis of the host to identify the specific vulnerabilities exploited and gather evidence of the attack phases involved.
+
+Remove any identified malicious software or unauthorized access tools from the host, ensuring all persistence mechanisms are eradicated.
+
+
+Apply security patches and updates to the host to address any exploited vulnerabilities and prevent similar attacks.
+
+## Anomalous Process For a Windows Population
+
+Searches for rare processes running on multiple hosts in an entire fleet or network. This reduces the detection of false positives since automated maintenance processes usually only run occasionally on a single machine but are common to all or many hosts in a fleet.
+
+
+**Rule type**: machine_learning
+
+**Severity**: low
+
+**Risk score**: 21
+
+**Tags**:
+
+- Domain: Endpoint
+- OS: Windows
+- Use Case: Threat Detection
+- Rule Type: ML
+- Rule Type: Machine Learning
+- Tactic: Persistence
+- Tactic: Execution
+- Resources: Investigation Guide
