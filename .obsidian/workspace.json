@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/True False Cases.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "True False Cases"
+              "title": "Alert Descriptions, Investigation  & Mitigation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SIEM Tasks/True False Cases.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for True False Cases"
+              "title": "Backlinks for Alert Descriptions, Investigation  & Mitigation"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/True False Cases.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of True False Cases"
+              "title": "Outline of Alert Descriptions, Investigation  & Mitigation"
             }
           }
         ],
@@ -171,15 +171,15 @@
   },
   "active": "35c9a56a425d1618",
   "lastOpenFiles": [
-    "SIEM Tasks/Images/True_False_Scenarios.png",
     "SIEM Tasks/True False Cases.md",
+    "SIEM Tasks/Images/True_False_Scenarios.png",
     "SIEM Tasks/Images",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "().md",
-    "Elastic/Elastic.md",
+    "ELK/Elastic.md",
     "SIEM Tasks",
     "README.md",
-    "Elastic",
+    "ELK",
     "Elastic-Kibana-Notes/Untitled.md"
   ]
 }
