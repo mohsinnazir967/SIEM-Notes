@@ -268,7 +268,7 @@ Block identified malicious IP addresses and domains at the firewall and update i
 
 If data exfiltration is suspected, perform a data integrity check to assess any potential data loss or compromise.
 
-## [Anomalous Windows Process Creation](https://www.elastic.co/guide/en/security/current/anomalous-windows-process-creation.html)
+## [7.Anomalous Windows Process Creation](https://www.elastic.co/guide/en/security/current/anomalous-windows-process-creation.html)
 
 
 Identifies unusual parent-child process relationships that can indicate malware execution or persistence mechanisms. Malicious scripts often call on other applications and processes as part of their exploit payload. For example, when a malicious Office document runs scripts as part of an exploit payload, Excel or Word may start a script interpreter process, which, in turn, runs a script that downloads and executes malware. Another common scenario is Outlook running an unusual process when malware is downloaded in an email. Monitoring and identifying anomalous process relationships is a method of detecting new and emerging malware that is not yet recognized by anti-virus scanners.
@@ -321,7 +321,7 @@ Inspect the affected systems for additional malware backdoors like reverse shell
 
 Remove and block malicious artifacts identified during triage.
 
-## [Unusual Hour for a User to Logon](https://www.elastic.co/guide/en/security/current/unusual-hour-for-a-user-to-logon.html)
+## [8.Unusual Hour for a User to Logon](https://www.elastic.co/guide/en/security/current/unusual-hour-for-a-user-to-logon.html)
 
 A machine learning job detected *a user logging in at a time of day that is unusual for the user.* This can be due to credentialed access via a compromised account when the user and the threat actor are in different time zones. In addition, unauthorized user activity often takes place during non-business hours.
 
@@ -366,7 +366,7 @@ Investigate credential exposure on systems compromised or used by the attacker t
 
 Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
-## [Unusual Process For a Windows Host](https://www.elastic.co/guide/en/security/current/unusual-process-for-a-windows-host.html)
+## [9.Unusual Process For a Windows Host](https://www.elastic.co/guide/en/security/current/unusual-process-for-a-windows-host.html)
 
 Identifies rare processes that do not usually run on individual hosts, which can indicate execution of unauthorized services, malware, or persistence mechanisms. Processes are considered rare when they only run occasionally as compared with other processes running on the host
 
@@ -386,7 +386,7 @@ Identifies rare processes that do not usually run on individual hosts, which can
 - Tactic: Persistence
 - Resources: Investigation Guide
 
-## Investigation guide
+### Investigation guide
 
 #### Triage and analysis
 
@@ -416,7 +416,7 @@ Implement temporary network rules, procedures, and segmentation to contain the m
 
 Stop suspicious processes.
 
-## Multiple Alerts in Different ATT&CK Tactics on a Single Host
+## [10.Multiple Alerts in Different ATT&CK Tactics on a Single Host](https://www.elastic.co/guide/en/security/current/multiple-alerts-in-different-att-ck-tactics-on-a-single-host.html)
 
 This rule uses alert data to determine *when multiple alerts in different phases of an attack involving the same host are triggered*. Analysts can use this to prioritize triage and response, as these hosts are more likely to be compromised.
 
@@ -436,7 +436,7 @@ This rule uses alert data to determine *when multiple alerts in different phases
 > [!NOTE] Higher Order Rule
 > Combines multiple alerts or conditions to identify more complex attack patterns or behaviors.
 
-## Investigation guide
+### Investigation guide
 
 #### Triage and analysis
 
@@ -465,7 +465,7 @@ Remove any identified malicious software or unauthorized access tools from the h
 
 Apply security patches and updates to the host to address any exploited vulnerabilities and prevent similar attacks.
 
-## Anomalous Process For a Windows Population
+## [11.Anomalous Process For a Windows Population](https://www.elastic.co/guide/en/security/current/anomalous-process-for-a-windows-population.html)
 
 Searches for rare processes running on multiple hosts in an entire fleet or network. This reduces the detection of false positives since automated maintenance processes usually only run occasionally on a single machine but are common to all or many hosts in a fleet.
 
@@ -517,7 +517,7 @@ Implement temporary network rules, procedures, and segmentation to contain the m
 
 Stop suspicious processes.
 
-## # Unusual Windows Path Activity
+## [12.Unusual Windows Path Activity](https://www.elastic.co/guide/en/security/current/unusual-windows-path-activity.html#_investigation_guide_1164)
 
 Identifies processes started from atypical folders in the file system, which might indicate malware execution or persistence mechanisms. In corporate Windows environments, software installation is centrally managed and it is unusual for programs to be executed from user or temporary directories. Processes executed from these locations can denote that a user downloaded software directly from the Internet or a malicious script or macro executed malware.
 
