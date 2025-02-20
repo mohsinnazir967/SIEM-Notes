@@ -1,6 +1,6 @@
 # Alert Descriptions, Investigation & Mitigation
 
-## [Privileged Account Brute Force](https://www.elastic.co/guide/en/security/current/privileged-account-brute-force.html#_investigation_guide_824)
+## [1.Privileged Account Brute Force](https://www.elastic.co/guide/en/security/current/privileged-account-brute-force.html#_investigation_guide_824)
 
 Identifies multiple consecutive logon failures targeting an Admin account from the same source address and within a short time interval. Adversaries will often brute force login attempts across multiple users with a common or known password, in an attempt to gain access to accounts.
 
@@ -48,7 +48,7 @@ Determine the initial vector abused by the attacker and take action to prevent r
 
 Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
-## [IPSEC NAT Traversal Port Activity](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
+## [2.IPSEC NAT Traversal Port Activity](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
 
 
 This rule detects events that could be describing IPSEC NAT Traversal traffic. IPSEC is a VPN technology that allows one system to talk to another using encrypted tunnels. NAT Traversal enables these tunnels to communicate over the Internet where one of the sides is behind a NAT router gateway. This may be common on your network, but this technique is also used by threat actors to avoid detection.
@@ -95,7 +95,7 @@ Review and update firewall and intrusion detection/prevention system (IDS/IPS) r
 
 Restore the affected system from a known good backup if any signs of compromise are confirmed, ensuring that all security patches and updates are applied before reconnecting to the network.
 
-## [Unusual Windows Username](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
+## [3.Unusual Windows Username](https://www.elastic.co/guide/en/security/current/ipsec-nat-traversal-port-activity.html#_investigation_guide_420)
 
 A machine learning job detected activity for a username that is not normally active, which can indicate unauthorized changes, activity by unauthorized users, lateral movement, or compromised credentials. In many organizations, new usernames are not often created apart from specific types of system activities, such as creating new accounts for new employees. These user accounts quickly become active and routine. Events from rarely used usernames can point to suspicious activity. Additionally, automated Linux fleets tend to see activity from rarely used usernames only when personnel log in to make authorized or unauthorized changes, or threat actors have acquired credentials and log in for malicious purposes. Unusual usernames can also indicate pivoting, where compromised credentials are used to try and move laterally from one host to another.
 
@@ -133,7 +133,7 @@ Examine the process arguments, title and working directory. These may provide in
 
 Consider the same for the parent process. If the parent process is a legitimate system utility or service, this could be related to software updates or system management. If the parent process is something user-facing like an Office application, this process could be more suspicious.
 
-## [Rare User Logon](https://www.elastic.co/guide/en/security/current/rare-user-logon.html)
+## [4.Rare User Logon](https://www.elastic.co/guide/en/security/current/rare-user-logon.html)
 
 A machine learning job found an unusual user name in the authentication logs. An unusual user name is one way of detecting credentialed access by means of a new or dormant user account. An inactive user account (because the user has left the organization) that becomes active may be due to credentialed access using a compromised account password. Threat actors will sometimes also create new users as a means of persisting in a compromised web application.
 
@@ -180,7 +180,7 @@ Reset passwords for these accounts and other potentially compromised credentials
 
 Using the incident response data, update logging and audit policies to improve the mean time to detect (MTTD) and the mean time to respond (MTTR).
 
-## [SMTP on Port 26/TCP](https://www.elastic.co/guide/en/security/current/smtp-on-port-26-tcp.html)
+## [5.SMTP on Port 26/TCP](https://www.elastic.co/guide/en/security/current/smtp-on-port-26-tcp.html)
 
 This rule detects events that may indicate use of SMTP on TCP port 26. This port is commonly used by several popular mail transfer agents to deconflict with the default SMTP port 25. This port has also been used by a malware family called BadPatch for command and control of Windows systems.
 
@@ -230,7 +230,7 @@ Review and analyze network logs to identify any other systems that may have comm
 
 Change all passwords and credentials that may have been compromised or accessed by the affected system to prevent unauthorized access.
 
-## [Spike in Network Traffic](https://www.elastic.co/guide/en/security/current/spike-in-network-traffic.html)
+## [6.Spike in Network Traffic](https://www.elastic.co/guide/en/security/current/spike-in-network-traffic.html)
 
 A machine learning job detected an unusually large spike in network traffic. Such a burst of traffic, if not caused by a surge in business activity, can be due to suspicious or malicious activity. Large-scale data exfiltration may produce a burst of network traffic; this could also be due to unusually large amounts of reconnaissance or enumeration traffic. Denial-of-service attacks or traffic floods may also produce such a surge in traffic.
 
@@ -548,8 +548,21 @@ In corporate Windows environments, software is typically managed centrally, maki
 
 **Possible investigation steps**
 
-- Review the process name and path to determine if it is a known legitimate application or a suspicious executable.
-- Check the parent process to understand how the process was initiated and if it correlates with expected user behavior or known software installations.
-- Investigate the user account associated with the process execution to verify if the activity aligns with their typical usage patterns or if it appears anomalous.
-- Examine the file hash of the executable to see if it matches known malware signatures or if it has been flagged by any threat intelligence sources.
-- Look into recent file modifications or creations in the directory from which the process was executed to identify any additional suspicious files or scripts.
+Review the process name and path to determine if it is a known legitimate application or a suspicious executable.
+
+Check the parent process to understand how the process was initiated and if it correlates with expected user behavior or known software installations.
+
+Investigate the user account associated with the process execution to verify if the activity aligns with their typical usage patterns or if it appears anomalous.
+
+Examine the file hash of the executable to see if it matches known malware signatures or if it has been flagged by any threat intelligence sources.
+
+Look into recent file modifications or creations in the directory from which the process was executed to identify any additional suspicious files or scripts.
+#### Mitigation
+
+Isolate the affected system from the network to prevent further spread of potential malware and unauthorized access.
+
+Terminate any suspicious processes identified as running from atypical directories to halt malicious activity.
+
+Conduct a thorough scan of the affected system using updated antivirus and anti-malware tools to identify and remove any malicious files.
+
+Review and restore any modified system processes or configurations to their original state to ensure system integrity.
