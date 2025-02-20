@@ -418,4 +418,10 @@ Stop suspicious processes.
 
 ## Multiple Alerts in Different ATT&CK Tactics on a Single Host
 
-This rule uses alert data to determine when multiple alerts in different phases of an attack involving the same host are triggered. Analysts can use this to prioritize triage and response, as these hosts are more likely to be compromised.
+This rule uses alert data to determine *when multiple alerts in different phases of an attack involving the same host are triggered*. Analysts can use this to prioritize triage and response, as these hosts are more likely to be compromised.
+
+**Rule type**: threshold
+
+**Severity**: high
+
+**Risk score**: 73
