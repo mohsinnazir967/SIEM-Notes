@@ -321,7 +321,7 @@ Inspect the affected systems for additional malware backdoors like reverse shell
 
 Remove and block malicious artifacts identified during triage.
 
-## [Unusual Hour for a User to Logon]()
+## [Unusual Hour for a User to Logon](https://www.elastic.co/guide/en/security/current/unusual-hour-for-a-user-to-logon.html)
 
 A machine learning job detected *a user logging in at a time of day that is unusual for the user.* This can be due to credentialed access via a compromised account when the user and the threat actor are in different time zones. In addition, unauthorized user activity often takes place during non-business hours.
 
@@ -385,3 +385,25 @@ Identifies rare processes that do not usually run on individual hosts, which can
 - Rule Type: Machine Learning
 - Tactic: Persistence
 - Resources: Investigation Guide
+
+## Investigation guide
+
+#### Triage and analysis
+
+**Investigating Unusual Process For a Windows Host**
+
+Searching for abnormal Windows processes is a good methodology to find potentially malicious activity within a network. Understanding what is commonly run within an environment and developing baselines for legitimate activity can help uncover potential malware and suspicious behaviors.
+
+This rule uses a machine learning job to detect a Windows process that is rare and unusual for an individual Windows host in your environment.
+
+**Possible investigation steps**
+
+Investigate the process execution chain (parent process tree) for unknown processes. Examine their executable files for prevalence, whether they are located in expected locations, and if they are signed with valid digital signatures.
+
+If the parent process is a legitimate system utility or service, this could be related to software updates or system management. If the parent process is something user-facing like an Office application, this process could be more suspicious.
+
+Investigate the process metadata — such as the digital signature, directory, etc. — to obtain more context that can indicate whether the executable is associated with an expected software vendor or package.
+
+
+Investigate other alerts associated with the user/host during the past 48 hours.
+
