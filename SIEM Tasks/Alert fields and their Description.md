@@ -54,3 +54,35 @@
 10. **Exfiltration**: Techniques used to steal data from a network. This includes data transfer over command and control channels, using removable media, and automated exfiltration.
     
 11. **Impact**: Techniques used by adversaries to disrupt availability or compromise integrity by manipulating business and operational processes. Examples include data destruction, encryption (ransomware), and service stop.
+
+## Operators 
+
+
+**is**: This operator is used to filter documents where the field exactly matches the specified value.
+ 
+*For example*, if you want to find all documents where `host.os.family` is `Windows`, you would use the `is` operator.
+
+
+**is not**: This operator is used to filter documents where the field does not match the specified value. 
+
+*For example*, if you want to exclude all documents where `host.os.family` is `Linux`, you would use the `is not` operator.
+
+
+**is one of**: This operator allows you to filter documents where the field matches any one of the specified values. 
+
+*For example*, if you want to find documents where `host.os.family` is either `Windows` or `macOS`, you would use the `is one of` operator and list 
+both values.    
+
+**exists**: This operator is used to filter documents where the specified field exists. 
+
+*For example*, if you want to find all documents that have the `host.ip` field, you would use the `exists` operator.
+
+**does not exist**: This operator is used to filter documents where the specified field does not exist.
+
+*For example*, if you want to find all documents that do not have the `host.ip` field, you would use the `does not exist` operator.
+    .
+    
+
+These operators are very useful for creating precise and effective filters in Kibana, allowing you to narrow down your search results to exactly what you need. If you have any more questions or need further clarification, feel free to ask!
+
+AI-generated content may be incorrect
