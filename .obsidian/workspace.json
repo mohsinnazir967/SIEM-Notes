@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ELK/Elastic Search Installation.md",
+                "file": "SIEM Tasks/True False Cases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Elastic Search Installation"
+              "title": "True False Cases"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ELK/Elastic Search Installation.md",
+                "file": "SIEM Tasks/True False Cases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Elastic Search Installation"
+              "title": "Backlinks for True False Cases"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ELK/Elastic Search Installation.md",
+                "file": "SIEM Tasks/True False Cases.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Elastic Search Installation"
+              "title": "Outline of True False Cases"
             }
           }
         ],
@@ -171,8 +171,8 @@
   },
   "active": "33e7840bde414442",
   "lastOpenFiles": [
-    "SIEM Tasks/Images/True_False_Scenarios.png",
     "ELK/Elastic Search Installation.md",
+    "SIEM Tasks/Images/True_False_Scenarios.png",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/True False Cases.md",
     "SIEM Tasks/Images",
