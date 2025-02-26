@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Untitled.md",
+                "file": "SIEM Tasks/Alert fields and their Description.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Alert fields and their Description"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SIEM Tasks/Untitled.md",
+                "file": "SIEM Tasks/Alert fields and their Description.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled"
+              "title": "Backlinks for Alert fields and their Description"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Untitled.md",
+                "file": "SIEM Tasks/Alert fields and their Description.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Alert fields and their Description"
             }
           }
         ],
@@ -184,10 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35c9a56a425d1618",
+  "active": "c6961bc6798b5bea",
   "lastOpenFiles": [
     "SIEM Tasks/True False Cases.md",
-    "SIEM Tasks/Untitled.md",
+    "SIEM Tasks/Alert fields and their Description.md",
     "ELK/Elastic Search Installation.md",
     "SIEM Tasks/Images/True_False_Scenarios.png",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
