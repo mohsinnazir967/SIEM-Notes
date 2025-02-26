@@ -80,9 +80,3 @@ both values.
 **does not exist**: This operator is used to filter documents where the specified field does not exist.
 
 *For example*, if you want to find all documents that do not have the `host.ip` field, you would use the `does not exist` operator.
-    .
-    
-
-These operators are very useful for creating precise and effective filters in Kibana, allowing you to narrow down your search results to exactly what you need. If you have any more questions or need further clarification, feel free to ask!
-
-AI-generated content may be incorrect
