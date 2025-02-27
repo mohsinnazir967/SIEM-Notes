@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Alert fields and their Description.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alert fields and their Description"
+              "title": "Alert Descriptions, Investigation  & Mitigation"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Alert fields and their Description.md",
+                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Alert fields and their Description"
+              "title": "Outline of Alert Descriptions, Investigation  & Mitigation"
             }
           }
         ],
@@ -186,8 +186,8 @@
   },
   "active": "c6961bc6798b5bea",
   "lastOpenFiles": [
-    "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/Alert fields and their Description.md",
+    "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/True False Cases.md",
     "ELK/Elastic Search Installation.md",
     "SIEM Tasks/Images/True_False_Scenarios.png",
