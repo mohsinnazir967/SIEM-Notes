@@ -39,4 +39,4 @@ In Kibana and Elasticsearch, the term **"indices"** is used to *refer to logic
 
 - **Indices** store data.
     
-- **Index Patterns/Data Views** help you access and explore this data in Kibana.
+- `**Index Patterns/Data Views** help you access and explore this data in Kibana.
