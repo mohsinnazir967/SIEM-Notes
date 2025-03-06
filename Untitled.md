@@ -33,8 +33,8 @@
 ## Key Differences
 
 1. **Scope of Coverage:**
-    
-    -**EDR:** Focuses on endpoint devices (laptops, servers, mobile devices).      
+   
+**EDR:** Focuses on endpoint devices (laptops, servers, mobile devices).      
 **MDR:** Covers a broader IT infrastructure (endpoints, networks, cloud).
 
 **XDR:** Provides a unified view across endpoints, networks, cloud, and applications.
