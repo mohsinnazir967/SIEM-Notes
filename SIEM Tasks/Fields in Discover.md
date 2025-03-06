@@ -1,4 +1,4 @@
-# Fields
+# Fields in Discover 
 
 data streams or indices.
 
