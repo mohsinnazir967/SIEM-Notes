@@ -1,4 +1,4 @@
-# Hashes (md5, sha128, sha256)
+# Hashes (md5, sha128, sha256) and Collisions
 
 ## Introduction to Hashes
 
