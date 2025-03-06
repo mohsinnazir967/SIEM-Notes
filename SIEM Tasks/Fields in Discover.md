@@ -1,6 +1,6 @@
 # Fields in Discover 
 
-***data streams or indices.***
+***Data streams or indices.***
 
 `.alerts-security.alerts-default,apm-*-transaction*,auditbeat-*,endgame-*,filebeat-*,logs-*,packetbeat-*,traces-apm*,winlogbeat-*,-*elastic-cloud-logs-*`
 
