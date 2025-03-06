@@ -240,8 +240,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03002d1b5f149311",
+  "active": "35c9a56a425d1618",
   "lastOpenFiles": [
+    "Windows Log Analysis/Windows Event Log Analysis.md",
+    "Windows Log Analysis/Critical Windows Event IDs Every SOC Analyst Must Monitor!.md",
+    "Windows Log Analysis",
+    "Sysmon/Sysmon Documentation.md",
+    "Sysmon",
     "SIEM Tasks/Common Alert fields and their Description.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Fields in Discover.md",
