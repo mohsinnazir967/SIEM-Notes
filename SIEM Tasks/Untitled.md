@@ -1,1 +1,218 @@
-container.security_context.privileged
+.alerts-security.alerts-default,apm-*-transaction*,auditbeat-*,endgame-*,filebeat-*,logs-*,packetbeat-*,traces-apm*,winlogbeat-*,-*elastic-cloud-logs-*
+Index pattern:
+.alerts-security.alerts-default,apm-*-transaction*,auditbeat-*,endgame-*,filebeat-*,logs-*,packetbeat-*,traces-apm*,winlogbeat-*,-*elastic-cloud-logs-*
+Time field:
+@timestamp
+Security Data View
+							
+winlog.version	long					Edit	
+winlog.user_data.xml_name	keyword					Edit	
+winlog.user_data.param2	keyword					Edit	
+winlog.user_data.param1	keyword					Edit	
+winlog.user_data.binaryDataSize	keyword					Edit	
+winlog.user_data.binaryData	keyword					Edit	
+winlog.user_data.UTCStartTime	keyword					Edit	
+winlog.user_data.SubjectUserSid	keyword					Edit	
+winlog.user_data.SubjectUserName	keyword					Edit	
+winlog.user_data.SubjectLogonId	keyword					Edit	
+winlog.user_data.SubjectDomainName	keyword					Edit	
+winlog.user_data.Status	keyword					Edit	
+winlog.user_data.RmSessionId	keyword					Edit	
+winlog.user_data.RestartCount	keyword					Edit	
+winlog.user_data.Problem	keyword					Edit	
+winlog.user_data.Message	keyword					Edit	
+winlog.user_data.Location	keyword					Edit	
+winlog.user_data.LifetimeId	keyword					Edit	
+winlog.user_data.InstanceId	keyword					Edit	
+winlog.user_data.FriendlyName	keyword					Edit	
+winlog.user_data.ExitCode	keyword					Edit	
+winlog.user_data.DetectedBy	keyword					Edit	
+winlog.user_data.Channel	keyword					Edit	
+winlog.user_data.BackupPath	keyword					Edit	
+winlog.user_data.ActiveOperation	keyword					Edit	
+winlog.user.type	keyword					Edit	
+winlog.user.name	keyword					Edit	
+winlog.user.identifier	keyword					Edit	
+winlog.user.domain	keyword					Edit	
+winlog.trustType	keyword					Edit	
+winlog.trustDirection	keyword					Edit	
+winlog.trustAttribute	keyword					Edit	
+winlog.time_created	date					Edit	
+winlog.task	keyword					Edit	
+winlog.related_activity_id	keyword					Edit	
+winlog.record_id	keyword					Edit	
+winlog.provider_name	keyword					Edit	
+winlog.provider_guid	keyword					Edit	
+winlog.process.thread.id	long					Edit	
+winlog.process.pid	long					Edit	
+winlog.outcome	keyword					Edit	
+winlog.opcode	keyword					Edit	
+winlog.logon.type	keyword					Edit	
+winlog.logon.id	keyword					Edit	
+winlog.logon.failure.sub_status	keyword					Edit	
+winlog.logon.failure.status	keyword					Edit	
+winlog.logon.failure.reason	keyword					Edit	
+winlog.level	keyword					Edit	
+winlog.keywords	keyword					Edit	
+winlog.event_id	keyword					Edit	
+
+
+
+
+winlog.event_data.updateTitle	keyword					Edit	
+winlog.event_data.updateRevisionNumber	keyword					Edit	
+winlog.event_data.updateGuid	keyword					Edit	
+winlog.event_data.serviceGuid	keyword					Edit	
+winlog.event_data.param9	keyword					Edit	
+winlog.event_data.param8	keyword					Edit	
+winlog.event_data.param7	keyword					Edit	
+winlog.event_data.param6	keyword					Edit	
+winlog.event_data.param5	keyword					Edit	
+winlog.event_data.param4	keyword					Edit	
+winlog.event_data.param3	keyword					Edit	
+winlog.event_data.param23	keyword					Edit	
+winlog.event_data.param22	keyword					Edit	
+winlog.event_data.param21	keyword					Edit	
+winlog.event_data.param20	keyword					Edit	
+winlog.event_data.param2	keyword					Edit	
+winlog.event_data.param19	keyword					Edit	
+winlog.event_data.param17	keyword					Edit	
+winlog.event_data.param16	keyword					Edit	
+winlog.event_data.param14	keyword					Edit	
+winlog.event_data.param13	keyword					Edit	
+winlog.event_data.param12	keyword					Edit	
+winlog.event_data.param11	keyword					Edit	
+winlog.event_data.param10	keyword					Edit	
+winlog.event_data.param1	keyword					Edit	
+winlog.event_data.WorkstationName	keyword					Edit	
+winlog.event_data.Workstation	keyword					Edit	
+winlog.event_data.VsmPolicy	keyword					Edit	
+winlog.event_data.VsmLaunchType	keyword					Edit	
+winlog.event_data.VirtualAccount	keyword					Edit	
+winlog.event_data.Version	keyword					Edit	
+winlog.event_data.UtcTime	keyword					Edit	
+winlog.event_data.UserWorkstations	keyword					Edit	
+winlog.event_data.UserSid	keyword					Edit	
+winlog.event_data.UserPrincipalName	keyword					Edit	
+winlog.event_data.UserParameters	keyword					Edit	
+winlog.event_data.UserAccountControl	keyword					Edit	
+winlog.event_data.User	keyword					Edit	
+winlog.event_data.UpdateReason	keyword					Edit	
+winlog.event_data.Type	keyword					Edit	
+winlog.event_data.TransmittedServices	keyword					Edit	
+winlog.event_data.TokenElevationType	keyword					Edit	
+winlog.event_data.TimeZoneInfoCacheUpdated	keyword					Edit	
+winlog.event_data.TimeSourceRefId	keyword					Edit	
+winlog.event_data.TimeSource	keyword					Edit	
+winlog.event_data.TicketOptionsDescription	keyword					Edit	
+winlog.event_data.TicketOptions	keyword					Edit	
+winlog.event_data.TicketEncryptionTypeDescription	keyword					Edit	
+winlog.event_data.TicketEncryptionType	keyword					Edit	
+winlog.event_data.TestSigning
+
+
+
+winlog.event_data.TerminalSessionId	keyword					Edit	
+winlog.event_data.TdoType	keyword					Edit	
+winlog.event_data.TdoDirection	keyword					Edit	
+winlog.event_data.TdoAttributes	keyword					Edit	
+winlog.event_data.TargetUserSid	keyword					Edit	
+winlog.event_data.TargetUserName	keyword					Edit	
+winlog.event_data.TargetUser	keyword					Edit	
+winlog.event_data.TargetSid	keyword					Edit	
+winlog.event_data.TargetServerName	keyword					Edit	
+winlog.event_data.TargetProcessName	keyword					Edit	
+winlog.event_data.TargetProcessId	keyword					Edit	
+winlog.event_data.TargetProcessGuid	keyword					Edit	
+winlog.event_data.TargetProcessGUID	keyword					Edit	
+winlog.event_data.TargetOutboundUserName	keyword					Edit	
+winlog.event_data.TargetOutboundDomainName	keyword					Edit	
+winlog.event_data.TargetObject	keyword					Edit	
+winlog.event_data.TargetName	keyword					Edit	
+winlog.event_data.TargetLogonId	keyword					Edit	
+winlog.event_data.TargetLogonGuid	keyword					Edit	
+winlog.event_data.TargetLinkedLogonId	keyword					Edit	
+winlog.event_data.TargetInfo	keyword					Edit	
+winlog.event_data.TargetImage	keyword					Edit	
+winlog.event_data.TargetFilename	keyword					Edit	
+winlog.event_data.TargetDomainName	keyword					Edit	
+winlog.event_data.TSId	keyword					Edit	
+winlog.event_data.SupportInfo2	keyword					Edit	
+winlog.event_data.SupportInfo1	keyword					Edit	
+winlog.event_data.SubjectUserSid	keyword					Edit	
+winlog.event_data.SubjectUserName	keyword					Edit	
+winlog.event_data.SubjectLogonId	keyword					Edit	
+winlog.event_data.SubjectDomainName	keyword					Edit	
+winlog.event_data.SubcategoryId	keyword					Edit	
+winlog.event_data.SubcategoryGuid	keyword					Edit	
+winlog.event_data.SubStatus	keyword					Edit	
+winlog.event_data.SubCategoryId	keyword					Edit	
+winlog.event_data.SubCategoryGuid	keyword					Edit	
+winlog.event_data.SubCategory	keyword					Edit	
+winlog.event_data.StopTime	keyword					Edit	
+winlog.event_data.StatusDescription	keyword					Edit	
+winlog.event_data.Status	keyword					Edit	
+winlog.event_data.State	keyword					Edit	
+winlog.event_data.StartType	keyword					Edit	
+winlog.event_data.StartTime	keyword					Edit	
+winlog.event_data.StartModule	keyword					Edit	
+winlog.event_data.StartFunction	keyword					Edit	
+winlog.event_data.StartAddress	keyword					Edit	
+winlog.event_data.SourceUser	keyword					Edit	
+winlog.event_data.SourceThreadId	keyword					Edit	
+winlog.event_data.SourceProcessId	keyword					Edit	
+winlog.event_data.SourceProcessGuid
+
+
+
+
+winlog.event_data.SourceProcessGUID	keyword					Edit	
+winlog.event_data.SourcePortName	keyword					Edit	
+winlog.event_data.SourcePort	keyword					Edit	
+winlog.event_data.SourceIsIpv6	keyword					Edit	
+winlog.event_data.SourceIp	keyword					Edit	
+winlog.event_data.SourceImage	keyword					Edit	
+winlog.event_data.SourceHostname	keyword					Edit	
+winlog.event_data.SourceAddress	keyword					Edit	
+winlog.event_data.Signed	keyword					Edit	
+winlog.event_data.SignatureStatus	keyword					Edit	
+winlog.event_data.Signature	keyword					Edit	
+winlog.event_data.SidHistory	keyword					Edit	
+winlog.event_data.SidFilteringEnabled	keyword					Edit	
+winlog.event_data.ShutdownReason	keyword					Edit	
+winlog.event_data.ShutdownEventCode	keyword					Edit	
+winlog.event_data.ShutdownActionType	keyword					Edit	
+winlog.event_data.ShareName	keyword					Edit	
+winlog.event_data.ShareLocalPath	keyword					Edit	
+winlog.event_data.SessionName	keyword					Edit	
+winlog.event_data.ServiceVersion	keyword					Edit	
+winlog.event_data.ServiceType	keyword					Edit	
+winlog.event_data.ServiceStartType	keyword					Edit	
+winlog.event_data.ServiceSid	keyword					Edit	
+winlog.event_data.ServicePrincipalNames	keyword					Edit	
+winlog.event_data.ServiceName	keyword					Edit	
+winlog.event_data.ServiceFileName	keyword					Edit	
+winlog.event_data.ServiceAccount	keyword					Edit	
+winlog.event_data.Service	keyword					Edit	
+winlog.event_data.SearchString	keyword					Edit	
+winlog.event_data.ScriptPath	keyword					Edit	
+winlog.event_data.ScriptBlockText	keyword					Edit	
+winlog.event_data.SchemaVersion	keyword					Edit	
+winlog.event_data.SchemaFriendlyName	keyword					Edit	
+winlog.event_data.Schema	keyword					Edit	
+winlog.event_data.SamAccountName	keyword					Edit	
+winlog.event_data.RuleName	keyword					Edit	
+winlog.event_data.ReturnCode	keyword					Edit	
+winlog.event_data.RetryMinutes	keyword					Edit	
+winlog.event_data.RestrictedAdminMode	keyword					Edit	
+winlog.event_data.ResourceAttributes	keyword					Edit	
+winlog.event_data.Resource	keyword					Edit	
+winlog.event_data.RemoteUserID	keyword					Edit	
+winlog.event_data.RemoteUserDescription	keyword					Edit	
+winlog.event_data.RemoteMachineID	keyword					Edit	
+winlog.event_data.RemoteMachineDescription	keyword					Edit	
+winlog.event_data.RemoteEventLogging	keyword					Edit	
+winlog.event_data.RelaxMinimumPasswordLengthLimits	keyword					Edit	
+winlog.event_data.RelativeTargetName	keyword					Edit	
+winlog.event_data.Reason	keyword					Edit	
+winlog.event_data.ReadOperation
