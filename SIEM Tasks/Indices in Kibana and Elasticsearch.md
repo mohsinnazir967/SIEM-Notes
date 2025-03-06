@@ -26,6 +26,7 @@ In Kibana and Elasticsearch, the term **"indices"** is used to *refer to logic
 
 
 **Data Views**: 
+
 In newer versions of Kibana, **data views** have replaced index patterns for accessing Elasticsearch data. A data view can point to one or more indices, data streams, or index aliases.
 
 - **What**: A newer way to access data in Kibana, replacing index patterns.
