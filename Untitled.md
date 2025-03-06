@@ -32,7 +32,7 @@
 
 ## Key Differences
 
-1. **Scope of Coverage:**
+### Scope of Coverage:
    
 **EDR:** Focuses on endpoint devices (laptops, servers, mobile devices).      
 **MDR:** Covers a broader IT infrastructure (endpoints, networks, cloud).
