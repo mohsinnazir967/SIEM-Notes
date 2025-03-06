@@ -58,7 +58,7 @@
     
 - **Password Storage**: Use SHA-256 or other secure algorithms for storing passwords securely.
 
-## What is a Collision?
+# What is a Collision?
 
 A **collision** occurs when two different input values produce the same output hash value using a hash function. This means that the hash function maps different data to the same fixed-size string of characters, known as a hash value or digest.
 
