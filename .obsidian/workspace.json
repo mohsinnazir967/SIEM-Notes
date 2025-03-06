@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction to IP Addresses.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to IP Addresses"
+              "title": "README"
             }
           }
         ],
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction to IP Addresses.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction to IP Addresses"
+              "title": "Outline of README"
             }
           }
         ],
@@ -242,14 +242,15 @@
   },
   "active": "03002d1b5f149311",
   "lastOpenFiles": [
-    "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
-    "Introduction to IP Addresses.md",
-    "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
-    "Untitled",
     "SIEM Tasks/Common Alert fields and their Description.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Fields in Discover.md",
+    "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
     "SIEM Tasks/True False Cases.md",
+    "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
+    "SIEM Tasks/Introduction to IP Addresses.md",
+    "Untitled.md",
+    "Cybersecurity Task",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "ELK/Elastic Search Installation.md",
     "SIEM Tasks/Images/True_False_Scenarios.png",
