@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Fields in Discover.md",
+                "file": "SIEM Tasks/Common Alert fields and their Description.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fields in Discover"
+              "title": "Common Alert fields and their Description"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Fields in Discover.md",
+                "file": "SIEM Tasks/Common Alert fields and their Description.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fields in Discover"
+              "title": "Outline of Common Alert fields and their Description"
             }
           }
         ],
@@ -200,11 +200,11 @@
   },
   "active": "37ae5185853a438d",
   "lastOpenFiles": [
-    "SIEM Tasks/Untitled.md",
-    "SIEM Tasks/Fields in Discover.md",
-    "SIEM Tasks/True False Cases.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
-    "SIEM Tasks/Alert fields and their Description.md",
+    "SIEM Tasks/Fields in Discover.md",
+    "SIEM Tasks/Untitled.md",
+    "SIEM Tasks/True False Cases.md",
+    "SIEM Tasks/Common Alert fields and their Description.md",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "ELK/Elastic Search Installation.md",
     "SIEM Tasks/Images/True_False_Scenarios.png",

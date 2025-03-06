@@ -1,5 +1,5 @@
 
-# Alert fields and their Description
+# Common Alert fields and their Description
 
 1. **agent.name**: The specific name assigned to the agent that collected the event data. This could be a custom name given to differentiate between multiple agents in a large deployment.
 
