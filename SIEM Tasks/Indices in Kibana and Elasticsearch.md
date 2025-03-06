@@ -1,4 +1,4 @@
-# Indices
+# Indices in Kibana and Elasticsearch
 
 In Kibana and Elasticsearch, the term **"indices"** is used to *refer to logical namespaces that hold collections of documents*. Each document is a collection of fields, similar to rows in a relational database table. Indices are the largest unit of data in Elasticsearch and serve as a way to organize and store data efficiently.
 
