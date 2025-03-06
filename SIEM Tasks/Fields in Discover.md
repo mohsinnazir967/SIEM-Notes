@@ -1,6 +1,8 @@
 # Fields
 
-**`.alerts-security.alerts-default,apm-*-transaction*,auditbeat-*,endgame-*,filebeat-*,logs-*,packetbeat-*,traces-apm*,winlogbeat-*,-*elastic-cloud-logs-*`**: This is not a field but seems to be a pattern for data streams or indices.
+data streams or indices.
+
+`.alerts-security.alerts-default,apm-*-transaction*,auditbeat-*,endgame-*,filebeat-*,logs-*,packetbeat-*,traces-apm*,winlogbeat-*,-*elastic-cloud-logs-*`
 
 ## Unique Fields with Definitions
 
