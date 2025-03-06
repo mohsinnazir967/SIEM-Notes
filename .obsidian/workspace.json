@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Indices.md",
+                "file": "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Indices"
+              "title": "Indices in Kibana and Elasticsearch"
             }
           }
         ],
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Indices.md",
+                "file": "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Indices"
+              "title": "Outline of Indices in Kibana and Elasticsearch"
             }
           }
         ],
@@ -215,7 +215,7 @@
   "active": "4411d5f6f118dd77",
   "lastOpenFiles": [
     "SIEM Tasks/Common Alert fields and their Description.md",
-    "SIEM Tasks/Indices.md",
+    "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Fields in Discover.md",
     "SIEM Tasks/Untitled.md",
