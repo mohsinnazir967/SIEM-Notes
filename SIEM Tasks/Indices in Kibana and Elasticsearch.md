@@ -15,8 +15,7 @@ In Kibana and Elasticsearch, the term **"indices"** is used to *refer to logic
     
 ### Index Patterns
 
- **Definiton**:
- In Kibana, an **index pattern** is used to define which Elasticsearch indices or data streams you want to explore. It can include wildcards to match multiple indices, making it easier to analyze large datasets across multiple sources.
+ **Definiton**: In Kibana, an **index pattern** is used to define which Elasticsearch indices or data streams you want to explore. It can include wildcards to match multiple indices, making it easier to analyze large datasets across multiple sources.
 
 - **What**: A way to select which indices you want to explore in Kibana.
     
@@ -25,9 +24,7 @@ In Kibana and Elasticsearch, the term **"indices"** is used to *refer to logic
 ### Data Views
 
 
-**Data Views**: 
-
-In newer versions of Kibana, **data views** have replaced index patterns for accessing Elasticsearch data. A data view can point to one or more indices, data streams, or index aliases.
+**Definition**: In newer versions of Kibana, **data views** have replaced index patterns for accessing Elasticsearch data. A data view can point to one or more indices, data streams, or index aliases.
 
 - **What**: A newer way to access data in Kibana, replacing index patterns.
     
