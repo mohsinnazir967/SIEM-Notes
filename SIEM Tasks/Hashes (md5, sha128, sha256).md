@@ -87,8 +87,3 @@ A **collision** occurs when two different input values produce the same output
 - **Use Secure Hash Algorithms**: SHA-256 and other members of the SHA-2 family are considered more secure and resistant to collisions.
     
 - **Regularly Update Algorithms**: As vulnerabilities are discovered, it's crucial to update hash functions to more secure versions.
-    
-
-## Conclusion
-
-Collisions are significant in cryptography because they can undermine the security of digital systems. Understanding and mitigating collisions is essential for maintaining data integrity and authenticity.
