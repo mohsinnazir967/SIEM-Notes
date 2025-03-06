@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "c6961bc6798b5bea",
+            "id": "32b81c0d5473ed23",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alert Descriptions, Investigation  & Mitigation"
+              "title": "Untitled"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Alert Descriptions, Investigation  & Mitigation"
+              "title": "Outline of Untitled"
             }
           }
         ],
@@ -184,11 +184,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6961bc6798b5bea",
+  "active": "32b81c0d5473ed23",
   "lastOpenFiles": [
-    "SIEM Tasks/Alert fields and their Description.md",
-    "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/True False Cases.md",
+    "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
+    "Untitled.md",
+    "SIEM Tasks/Alert fields and their Description.md",
     "ELK/Elastic Search Installation.md",
     "SIEM Tasks/Images/True_False_Scenarios.png",
     "SIEM Tasks/Images",
