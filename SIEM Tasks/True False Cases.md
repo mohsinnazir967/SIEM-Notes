@@ -41,8 +41,6 @@ A security system detects and alerts on a genuine hacking attempt.
 **Impact**:
 
 True positives are crucial for maintaining security as they ensure real threats are addressed promptly.
-
-
 ## True Negative
 
 **Definition**: 
