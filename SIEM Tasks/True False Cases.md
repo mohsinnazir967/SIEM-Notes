@@ -39,6 +39,7 @@ This is when a system correctly identifies a real threat.
 A security system detects and alerts on a genuine hacking attempt.
 
 **Impact**:
+
 True positives are crucial for maintaining security as they ensure real threats are addressed promptly.
 
 
@@ -55,5 +56,3 @@ A security system correctly ignores a legitimate login attempt.
 **Impact**: 
 
 True negatives help in maintaining normal operations without unnecessary interruptions.
-
-![[True_False_Scenarios.png]]
