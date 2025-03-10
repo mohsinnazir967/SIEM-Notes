@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
+                "file": "SIEM Tasks/Fields in Discover.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hashes (md5, sha128, sha256) Collisions"
+              "title": "Fields in Discover"
             }
           }
         ],
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
+                "file": "SIEM Tasks/Fields in Discover.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Hashes (md5, sha128, sha256) Collisions"
+              "title": "Outline of Fields in Discover"
             }
           }
         ],
@@ -242,12 +242,12 @@
   },
   "active": "03002d1b5f149311",
   "lastOpenFiles": [
+    "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
+    "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
     "SIEM Tasks/True False Cases.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
-    "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
     "SIEM Tasks/Introduction to IP Addresses.md",
-    "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
     "SIEM Tasks/Fields in Discover.md",
     "SIEM Tasks/Common Alert fields and their Description.md",
     "Windows Log Analysis/Windows Event Log Analysis.md",
