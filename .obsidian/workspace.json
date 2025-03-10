@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/Fields in Discover.md",
+                "file": "Windows Log Analysis/Windows Event Log Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fields in Discover"
+              "title": "Windows Event Log Analysis"
             }
           }
         ],
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/Fields in Discover.md",
+                "file": "Windows Log Analysis/Windows Event Log Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fields in Discover"
+              "title": "Outline of Windows Event Log Analysis"
             }
           }
         ],
@@ -242,16 +242,16 @@
   },
   "active": "03002d1b5f149311",
   "lastOpenFiles": [
+    "Windows Log Analysis/Critical Windows Event IDs Every SOC Analyst Must Monitor!.md",
+    "Windows Log Analysis/Windows Event Log Analysis.md",
+    "SIEM Tasks/Fields in Discover.md",
     "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
     "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
     "SIEM Tasks/True False Cases.md",
     "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/Introduction to IP Addresses.md",
-    "SIEM Tasks/Fields in Discover.md",
     "SIEM Tasks/Common Alert fields and their Description.md",
-    "Windows Log Analysis/Windows Event Log Analysis.md",
-    "Windows Log Analysis/Critical Windows Event IDs Every SOC Analyst Must Monitor!.md",
     "Sysmon/Sysmon Documentation.md",
     "README.md",
     "Windows Log Analysis",
