@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIEM Tasks/True False Cases.md",
+                "file": "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "True False Cases"
+              "title": "Hashes (md5, sha128, sha256) Collisions"
             }
           }
         ],
@@ -213,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SIEM Tasks/True False Cases.md",
+                "file": "SIEM Tasks/Hashes (md5, sha128, sha256) Collisions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of True False Cases"
+              "title": "Outline of Hashes (md5, sha128, sha256) Collisions"
             }
           }
         ],
@@ -242,8 +242,8 @@
   },
   "active": "03002d1b5f149311",
   "lastOpenFiles": [
-    "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/True False Cases.md",
+    "SIEM Tasks/Detection & Response ( EDR, MDR & XDR ).md",
     "SIEM Tasks/Alert Descriptions, Investigation  & Mitigation.md",
     "SIEM Tasks/Indices in Kibana and Elasticsearch.md",
     "SIEM Tasks/Introduction to IP Addresses.md",

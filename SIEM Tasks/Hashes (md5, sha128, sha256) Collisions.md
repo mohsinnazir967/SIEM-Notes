@@ -61,13 +61,7 @@
 # What is a Collision?
 
 A **collision** occurs when two different input values produce the same output hash value using a hash function. This means that the hash function maps different data to the same fixed-size string of characters, known as a hash value or digest.
-
-## Types of Collisions
-
-1. **Classical Collision Attack**: This involves finding two distinct messages that produce the same hash value.
-    
-2. **Chosen-Prefix Collision Attack**: Given two different prefixes, find suffixes such that the concatenation of each prefix with its respective suffix produces the same hash value.
-    
+   
 ## Impact of Collisions
 
 - **Security Risks**: Collisions can compromise data integrity and authenticity. For example, if two different files have the same hash, it might indicate tampering or unauthorized modifications.
