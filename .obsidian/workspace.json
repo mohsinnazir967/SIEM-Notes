@@ -90,9 +90,21 @@
               "icon": "lucide-file",
               "title": "Windows Event Log Analysis"
             }
+          },
+          {
+            "id": "68030280cc3e60c5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -213,13 +225,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows Log Analysis/Windows Event Log Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Windows Event Log Analysis"
+              "title": "Outline"
             }
           }
         ],
@@ -240,7 +251,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03002d1b5f149311",
+  "active": "68030280cc3e60c5",
   "lastOpenFiles": [
     "Windows Log Analysis/Critical Windows Event IDs Every SOC Analyst Must Monitor!.md",
     "Windows Log Analysis/Windows Event Log Analysis.md",
